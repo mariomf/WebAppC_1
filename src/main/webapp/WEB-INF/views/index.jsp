@@ -1,60 +1,319 @@
-<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="es">
+
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <title>JavaSpringWebApp</title>
-    <meta name="description" content="" />
 
-    <spring:url value="/resources/gradients.css" var="gradientsCss" />
-    <spring:url value="/resources/styles.css" var="stylesCss" />
-    <spring:url value="/resources/set-background.js" var="setBackgroundJs" />
-    <spring:url value="/resources/tweet.svg" var="tweetSvg" />
+    <meta charset="utf-8">
+    <meta name="keywords" content="CALEBIA, calebiamx, calebia, food, comida">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Somos la forma sencilla de cocinar y entregar tu comida preparada de toda la semana para que tu única chamba sea disfrutarla.">
+    <meta name="author" content="CALEBIA">
+    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/boomapp-84476.appspot.com/o/VERTICAL%20LETRAS%20BLANCAS.png?alt=media&token=84acb16e-3db3-4232-9c1e-160ecd526ff2" />
 
-    <link href="${stylesCss}" rel="stylesheet">
-    <link href="${gradientsCss}" rel="stylesheet">
+
+    <title>CALEBIA</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1138781026271301');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1138781026271301&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+
   </head>
-  <body class="">
-    <div class="wrapper">
-      <div class="graphics">
-        <div class="tower">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-11 170 1000 429" enable-background="new -11 170 1000 429" xml:space="preserve">
-            <path class="path" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M989,595H712v-35c0,0,4.5-1.8,8-3 c5.2-1.8,12.5,5.3,22-4c3.4-3.4-0.9-7.8-0.4-10.1c0.7-3.1,4.4-6.8,1.6-11.4c-2.6-4.2-6.9-3.6-8.2-5.5c-1.7-2.3-2.2-6.3-7-9 c-5.6-3.1-9.9,0.2-13-1c-2.5-0.9-2.3-5-9-5c-4.8,0-7.2,4.8-10,5c-2.3,0.2-4.9-4.5-10-2c-5.5,2.8-4,7.3-6,9c-1.4,1.2-3.1,3.2-6,4.2 c-2.6,0.9-4.9,3-4,8.8c0.6,3.7,6.8,4.1,7.5,6c1,2.9-6.4,6.2-2.5,12c3,4.5,9,1.6,12,1c1.9-0.4,7.1-0.7,8,0c3.4,2.5,9,5,9,5v35 l-506-1.5L182.3,444l0.3-0.8v-69.6l-0.2-0.2l12.3-72.3c10.9-2.6,16.5-6.5,16.5-6.5l-5.2-2.9l1.1-5.8l15-3.3l-10.1-3.9l1.2-4.6 c-15.8-8.3-32.2-11-32.2-11v-3.6l4.1-6.5h-4.9v-4.4h-8.3V244h-1.2l-1.7-31.2l-1-1.3l-1,1.3l-1.7,31.2h-1.2v4.8h-8.3v4.4h-4.9 l4.1,6.5v3.6c0,0-16.5,2.7-32.2,11l1.2,4.6l-10.1,3.9l15,3.3l1.1,5.8l-5.1,2.9c0,0,5.5,3.9,16.4,6.5l12.3,72.4l-0.1,0.1v69.6 l0.3,0.8l-14.6,149.4h-1.2H-11"/>
-            <path class="path" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M8,393.7c0-13.5,12.1-10.8,15.6-14.7 c2.8-3.2-1-8.8,9-13.9c7.9-4.1,9.7,1,13.1,0.8c4.5-0.3,3.3-6.7,14.7-6.6c12.7,0.2,11.2,8.4,14.7,10.6c3,1.9,7.9-2.1,13.9,4.1 c3.8,4,1.3,7.4,2.5,9.8c2.2,4.4,14.7,0.9,14.7,13.9c0,12.2-13.5,8.3-17.2,10.6c-3.6,2.3-4.4,9.3-13.1,11.5c-8,2-9.5-4-13.9-4.1 c-5-0.1-5.5,8.6-18.8,6.6c-12.3-1.9-12.3-9.1-16.4-12.3C21.9,406.3,8,408.6,8,393.7z"/>
-            <path class="path" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M325.1,313.9c-3.9,3-3.9,10-15.7,11.8 c-12.8,2-13.3-6.4-18-6.3c-4.3,0.1-5.7,5.8-13.3,3.9c-8.4-2.1-9.1-8.8-12.5-11c-3.6-2.3-16.5,1.5-16.5-10.2c0-12.4,12-9.1,14.1-13.3 c1.1-2.3-1.3-5.6,2.4-9.4c5.8-6,10.4-2.1,13.3-3.9c3.4-2.1,2-10,14.1-10.2c11-0.2,9.9,6,14.1,6.3c3.3,0.2,5-4.7,12.5-0.8 c9.6,4.9,6,10.3,8.6,13.3c3.3,3.7,14.9,1.2,14.9,14.1C343.1,312.5,329.8,310.3,325.1,313.9z"/>
-            <path class="path" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M18.4,229.5c0-13.5,12.1-10.8,15.6-14.7 c2.8-3.2-1-8.8,9-13.9c7.9-4.1,9.7,1,13.1,0.8c4.5-0.3,3.3-6.7,14.7-6.6c12.7,0.2,11.2,8.4,14.7,10.6c3,1.9,7.9-2.1,13.9,4.1 c3.8,4,1.3,7.4,2.5,9.8c2.2,4.4,14.7,0.9,14.7,13.9c0,12.2-13.5,8.3-17.2,10.6c-3.6,2.3-4.4,9.3-13.1,11.5c-8,2-9.5-4-13.9-4.1 c-5-0.1-5.5,8.6-18.8,6.6c-12.3-1.9-12.3-9.1-16.4-12.3C32.2,242.1,18.4,244.4,18.4,229.5z"/>
-            <path class="path" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M215.8,398.8c0-13.5,12.1-10.8,15.6-14.7 c2.8-3.2-1-8.8,9-13.9c7.9-4.1,9.7,1,13.1,0.8c4.5-0.3,3.3-6.7,14.7-6.6c12.7,0.2,11.2,8.4,14.7,10.6c3,1.9,7.9-2.1,13.9,4.1 c3.8,4,1.3,7.4,2.5,9.8c2.2,4.4,14.7,0.9,14.7,13.9c0,12.2-13.5,8.3-17.2,10.6c-3.6,2.3-4.4,9.3-13.1,11.5c-8,2-9.5-4-13.9-4.1 c-5-0.1-5.5,8.6-18.8,6.6c-12.3-1.9-12.3-9.1-16.4-12.3C229.7,411.3,215.8,413.6,215.8,398.8z"/>
-          </svg>
-        </div>
-      </div>
 
-      <header>
-        <nav class="website-nav">
-          <ul>
-            <li><a class="home-link" href="https://aws.amazon.com/">Home</a></li>
-            <li><a href="https://aws.amazon.com/what-is-cloud-computing/">About</a></li>
-            <li><a href="https://aws.amazon.com/solutions/">Services</a></li>
-            <li><a href="https://aws.amazon.com/contact-us/">Contact</a></li>
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/favicon.ico">  Inicio</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#projects">Proyecto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#signup">Contacto</a>
+            </li>
           </ul>
-        </nav>
-      </header>
-
-      <div class="message">
-          <a class="twitter-link" href="http://twitter.com/home/?status=I%20created%20a%20project%20with%20AWS%20CodeStar!%20%23AWS%20%23AWSCodeStar%20https%3A%2F%2Faws.amazon.com%2Fcodestar">
-              <img src="${tweetSvg}" alt="Tweet"/>
-          </a>
-        <div class="text">
-          <h1>Congratulations!</h1>
-          <h2>You just created a Java Spring web application.</h2>
         </div>
       </div>
-    </div>
+    </nav>
 
-    <footer>
-      <p class="footer-contents">Designed and developed with <a href="https://aws.amazon.com/careers/devtools-jobs/">♥</a> in Seattle.</p>
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+          <!-- <h1 class="mx-auto my-0 text-uppercase">Calebia</h1> -->
+          <img src="https://firebasestorage.googleapis.com/v0/b/boomapp-84476.appspot.com/o/VERTICAL%20LETRAS%20BLANCAS.png?alt=media&token=84acb16e-3db3-4232-9c1e-160ecd526ff2" class="img-logo" alt="">
+          <h2 class="text-white-50 mx-auto mt-2 mb-5">¡Preparamos la comida de tu semana!</h2>
+          <p class="llamanos">ORDENA POR WHATSAPP:</p>
+          <p class="Telefono"><img src="img/whatsapp.png">   33-31-77-4776</p>
+          <!--<a href="#about" class="btn btn-primary js-scroll-trigger">Conocenos!</a>-->
+          <a href="order" class="btn btn-primary js-scroll-trigger">Ordena AQUI!</a>
+          <!--href="https://calebia.com/ordena.html"-->
+          <!--formZoho.html-->
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-mb-5">
+              <img src="img/SAMSUNG 9.png" class="img-phone" alt="">
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-white mb-4">Calebia</h2>
+            <p class="text-white-50">
+                Somos la forma sencilla de cocinar y entregar tu comida preparada de toda la semana para que tu única chamba sea disfrutarla.
+            </p>
+            <p class="text-white-50">
+              <a href="https://www.instagram.com/calebiamx/">CALEBIA</a>
+              nace de la necesidad de comer de forma saludable sin invertir tiempo valioso de nuestro día a día. Lo que buscamos es entregar un producto de calidad que puedas tener a la mano todo el tiempo y de esta manera ahorrarte gastos en comidas de emergencia que además no son de la mejor calidad. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section bg-light">
+      <div class="container">
+
+        <!-- Featured Project Row Steps-->
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div class="col-xl-8 col-lg-7">
+            <img class="img-fluid mb-3 mb-lg-0" src="img/Pasos.jpeg" alt="">
+          </div>
+          <div class="col-xl-4 col-lg-5">
+            <div class="featured-text text-center text-lg-left">
+              <h4>¡Es súper sencillo!</h4>
+              <p class="text-black-50 mb-0">Estas a unos cuantos pasos de recibir tu comida de la semana a domicilio.
+                </p> 
+              <p class="text-black-50 mb-0">Con CALEBIA tienes un menú diferente y delicioso toda la semana.</p>
+              <p class="Ordena-Ya">
+                  ¡Ordena ya!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured Project Row Package-->
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div class="col-xl-4 col-lg-5">
+            <div class="featured-text1 text-center text-lg-right">
+              <h4>¡Nuestro empaque!</h4>
+              <p class="text-black-50 mb-0">Por qué nos preocupa la calidad y frescura de nuestros alimentos, te entregamos en bolsas abre fácil grado alimenticio las cuales puedes calentar en el microondas sin ningún problema y para tu comodidad.
+                </p> 
+            </div>
+          </div>
+          <div class="col-xl-8 col-lg-7">
+            <img class="img-fluid mb-3 mb-lg-0" src="img/EMPAQUE.png" alt="">
+          </div>
+        </div>
+
+        <!-- Project One Row -->
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/kevin-unsplash.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-left">
+                  <h4 class="text-white">¡No pierdas horas en la cocina!</h4>
+                  <p class="mb-0 text-white-50 text-justify">CALEBIA sabe que el ritmo de vida actual es muy acelerado y no contamos con el tiempo suficiente y energía para comprar los ingredientes y prepararlos.
+                  </p>
+                  <p class="mb-0 text-white-50 text-justify">Ya no te preocupes más, CALEBIA ha llegado para facilitarte la vida, para que solamente te sientes a disfrutar de tu comida.
+                  </p>
+                  <hr class="d-none d-lg-block mb-0 ml-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Two Row -->
+        <div class="row justify-content-center no-gutters">
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/vitchakorn.jpg" alt="">
+          </div>
+          <div class="col-lg-6 order-lg-first">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-right">
+                  <h4 class="text-white">¡Come sanamente!</h4>
+                  <p class="mb-0 text-white-50 text-justify">¿Eres de los que se la pasa comiendo en la calle por no tener tiempo y/o ganas de cocinar? </p>
+                  <p class="mb-0 text-white-50 text-justify">
+                  Nuestro servicio es ideal para ti, contamos con platillos equilibrados y saludables que permiten una alimentación ideal. Cuidamos el valor nutricional de cada platillo, así como su preparación</p>
+                  <hr class="d-none d-lg-block mb-0 mr-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 Row -->
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/Penny1.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-left">
+                  <h4 class="text-white">Lo mejor de todo ¡Es súper económico!</h4>
+                  <p class="mb-0 text-white-50 text-justify">Porque también nos preocupa tu cartera, llévate la comida preparada para toda la semana desde $389 (Incluye 3 platillos 500 gramos de guiso y 5 guarniciones de 250 gramos cada una).
+                  </p>
+                  <hr class="d-none d-lg-block mb-0 ml-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured Project Row -->
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+          <!--<<div class="col-xl-4 col-lg-5">-->
+            <div class="featured-text text-center">
+              <h4>¡Innovador!</h4>
+              <p class="text-black-50 mb-0">En esta primera etapa trabajamos con pedidos semanales y con una zona delimitada en la zona metropolitana de Guadalajara para poder entregarte a tiempo y con calidad, en las próximas etapas del proyecto incorporaremos nuevas modalidades para beneficio que te sorprenderán.
+                </p> 
+            </div>
+         <!-- </div>
+          no-gutters mb-4 mb-lg-5
+        class="col-xl-7 col-lg-7-->
+        </div>
+        <div class="text-center">
+            <img src="img/innovation.png" class="rounded mx-auto d-block">
+        </div>
+    </section>
+
+    <!-- Signup Section -->
+    <section id="signup" class="signup-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-lg-8 mx-auto text-center">
+
+            <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+            <h2 class="text-white mb-5">Mandanos tu e-mail para mantenerte informado!</h2>
+
+            <form class="form-inline d-flex">
+              <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Escribe tu correo...">
+              <button type="submit" class="btn btn-primary mx-auto">Subscribir</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section bg-black">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                <h4 class="text-uppercase m-0">Direccion</h4>
+                <hr class="my-4">
+                <div class="small text-black-50">Calle San Javier, Guadalajara JAL</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-envelope text-primary mb-2"></i>
+                <h4 class="text-uppercase m-0">Email</h4>
+                <hr class="my-4">
+                <div class="small text-black-50">
+                  <a href="#">contacto@calebia.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                <h4 class="text-uppercase m-0">Telefono</h4>
+                <hr class="my-4">
+                <div class="small text-black-50">33-31-77-4776</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="social d-flex justify-content-center"><!--#ce31b2-->
+          <a href="https://www.instagram.com/calebiamx/" class="mx-2">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.facebook.com/calebiamex/" class="mx-2">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <!-- <a href="#" class="mx-2">
+            <i class="fab fa-github"></i>
+          </a> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black small text-center text-white-50">
+      <div class="container">
+        Copyright &copy; Calebia 2017
+      </div>
     </footer>
 
-    <script src={$setBackgroundJs}"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.min.js"></script>
+
   </body>
+
 </html>
